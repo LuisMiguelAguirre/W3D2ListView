@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/wildColor"
+    android:orientation="vertical"
     >
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wild"/>
+        android:text="Wild"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
 
     <ImageView
-        android:src="@mipmap/ic_launcher"
         android:id="@+id/image_view_picture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"/>
+        />
 
     <TextView
-        android:text="Name:"
         android:id="@+id/text_view_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"/>
 
     <TextView
-        android:text="Description:"
         android:id="@+id/text_view_description"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
 
 </LinearLayout>

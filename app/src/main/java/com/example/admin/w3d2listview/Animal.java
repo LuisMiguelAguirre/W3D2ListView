@@ -8,6 +8,8 @@ class Animal {
     String name;
     int imageId;
     String description;
+    int layout;
+
 
     public int getLayout() {
         return layout;
@@ -17,7 +19,6 @@ class Animal {
         this.layout = layout;
     }
 
-    int layout;
 
     public Animal(String name, int imageId, String description, int layout) {
         this.name = name;

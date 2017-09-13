@@ -28,10 +28,10 @@ public class AnimalListViewAdapter extends ArrayAdapter<Animal> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         Animal animal = getItem(position);
+        LayoutInflater layoutInflater;
 
-        if (convertView == null) {
-            convertView = LayoutInflater.from(parent.getContext()).inflate(animal.getLayout(), null);
-        }
+        layoutInflater = LayoutInflater.from(parent.getContext());
+        convertView = layoutInflater.inflate(animal.getLayout(), null);
 
         ViewHolderAnimal viewHolderAnimal = new ViewHolderAnimal();
         viewHolderAnimal.imageViewPicture = convertView.findViewById(R.id.image_view_picture);
